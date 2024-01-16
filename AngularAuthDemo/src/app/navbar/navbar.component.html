@@ -1,0 +1,11 @@
+<ul>
+  <li><a routerLink="books">Books</a></li>
+  <li><a routerLink="authors">Authors</a></li>
+
+  <li><a routerLink="init">Initialize DB</a></li>
+
+  <li *ngIf="!isLoggedIn()"><a routerLink="login">Login</a></li>
+  <li *ngIf="!isLoggedIn()"><a routerLink="signup">signup</a></li>
+
+  <li *ngIf="isLoggedIn()"><a href="" (click)="logout()">Logout</a></li>
+</ul>

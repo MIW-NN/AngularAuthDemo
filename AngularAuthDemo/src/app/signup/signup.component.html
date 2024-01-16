@@ -1,0 +1,15 @@
+<p>signup works!</p>
+
+
+<h1>Signup now!</h1>
+
+<div>
+<label> Name: </label>
+  <input [(ngModel)]="user.username">
+  <label> Password: </label>
+  <input [(ngModel)]="user.password">
+
+  <h3 [innerText]="warnText"></h3>
+
+  <button (click)="signup()">signin</button>
+</div>

@@ -1,0 +1,24 @@
+<p>books works!</p>
+
+<table>
+  <thead>
+  <tr>
+    <th>
+      #
+    </th>
+    <th>
+      Title
+    </th>
+    <th>
+      Author
+    </th>
+  </tr>
+  </thead>
+  <tbody *ngFor="let book of books; let i = index" [attr.data-index]="i">
+  <tr>
+    <td>{{i}}</td>
+    <td>{{book.title}}</td>
+    <td>{{book.authors[0].displayName}}</td>
+  </tr>
+  </tbody>
+</table>

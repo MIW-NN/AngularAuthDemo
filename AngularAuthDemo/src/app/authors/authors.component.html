@@ -1,0 +1,20 @@
+<p>authors works!</p>
+
+<table>
+  <thead>
+  <tr>
+    <th>
+      #
+    </th>
+    <th>
+      Name
+    </th>
+  </tr>
+  </thead>
+  <tbody *ngFor="let author of authors; let i = index" [attr.data-index]="i">
+  <tr>
+    <td>{{i}}</td>
+    <td>{{author.displayName}}</td>
+  </tr>
+  </tbody>
+</table>
